@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUI_SpikeSorting</class>
+ <widget class="QMainWindow" name="GUI_SpikeSorting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GUI_SpikeSorting</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="Onglets">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="OngletRawData">
+       <attribute name="title">
+        <string>reading Data</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="OngletClusterAnalysis">
+       <attribute name="title">
+        <string>clustering analysis</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="OngletHeader">
+       <attribute name="title">
+        <string>Header</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTextEdit" name="teReadFile">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="OngletFittingData">
+       <attribute name="title">
+        <string>Fitting Data</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="OngletStaticGraph">
+       <attribute name="title">
+        <string>static graph</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="ongletFiltering">
+       <attribute name="title">
+        <string>filtering</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>714</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPlay"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionOuvrir"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionPlay">
+   <property name="text">
+    <string>play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="text">
+    <string>pause</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="text">
+    <string>ouvrir</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
